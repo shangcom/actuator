@@ -1,6 +1,12 @@
 management:
   server:
     port: 8080
+    tomcat:
+      mbeanregistry:
+        enabled=true:
+  metrics:
+    enable:
+      all: true
   info:
     java:
       enabled: true
@@ -31,3 +37,8 @@ info:
 logging:
   level:
     hello.controller: debug
+
+spring:
+  jmx:
+    enabled: true
+
