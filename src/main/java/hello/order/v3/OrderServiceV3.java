@@ -54,7 +54,7 @@ public class OrderServiceV3 implements OrderService {
     /**
      * Random()은 가장 오래 걸린 시간 확인하려고 걸린 시간 다 다르게 만들기 위해 넣었음.
      */
-    private static void sleep(int l) {
+    private static void sleep(int   l) {
         try {
             Thread.sleep(l + new Random().nextInt(200));
         } catch (InterruptedException e) {

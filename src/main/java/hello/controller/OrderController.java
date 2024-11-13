@@ -17,14 +17,15 @@ public class OrderController {
     public String order() {
         log.info("order");
         orderService.order();
-        log.info("stock = {}", orderService.getStock().get());
+//        log.info("stock = {}", orderService.getStock().get());
         return "order";
     }
+
     @GetMapping("/cancel")
     public String cancel() {
         log.info("cancel");
         orderService.cancel();
-        log.info("stock = {}", orderService.getStock().get());
+//        log.info("stock = {}", orderService.getStock().get());
         return "cancel";
     }
 
